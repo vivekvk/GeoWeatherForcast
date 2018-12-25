@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Geo-Weather</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="error_message">Something went wrong at our end!</string>
+    <string name="retry_button">RETRY</string>
+</resources>
