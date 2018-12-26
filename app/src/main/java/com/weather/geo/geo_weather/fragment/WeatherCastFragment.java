@@ -116,7 +116,7 @@ public class WeatherCastFragment extends Fragment {
 
         getCurrentWeather(location);
 
-        mAdapter = new WeatherlistAdaptor(getContext(), dayList, tempList,timeTempMapping);
+        mAdapter = new WeatherlistAdaptor(getContext(),tempList,timeTempMapping);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
         rcv_Weather.setLayoutManager(mLayoutManager);
         rcv_Weather.setItemAnimator(new DefaultItemAnimator());
