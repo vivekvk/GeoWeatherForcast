@@ -1,9 +1,4 @@
 package com.weather.geo.geo_weather.model;
-/*
- * Copyright (C) 2018 Stack Labs, Inc - All Rights Reserved.
- * Contents of this file are proprietary and confidential.
- * Unauthorized copying of this file, via any medium, is strictly prohibited.
- */
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

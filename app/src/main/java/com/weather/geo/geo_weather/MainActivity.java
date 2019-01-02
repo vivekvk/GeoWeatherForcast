@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         fr_Container = (FrameLayout) findViewById(R.id.frame_container);
 
-       FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
+        FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
         tx.replace(R.id.frame_container, new WeatherCastFragment());
         tx.commit();
 

@@ -1,10 +1,6 @@
-package com.weather.geo.geo_weather.fragment;
-/*
- * Copyright (C) 2018 Stack Labs, Inc - All Rights Reserved.
- * Contents of this file are proprietary and confidential.
- * Unauthorized copying of this file, via any medium, is strictly prohibited.
- */
+package com.weather.geo.geo_weather.model;
 
+import com.weather.geo.geo_weather.model.Current;
 import com.weather.geo.geo_weather.model.Location;
 
 public class WeatherResponseModel {

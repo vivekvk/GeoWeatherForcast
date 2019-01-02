@@ -1,4 +1,4 @@
-package com.weather.geo.geo_weather.fragment;
+package com.weather.geo.geo_weather.model;
 
 import com.weather.geo.geo_weather.model.Condition;
 
