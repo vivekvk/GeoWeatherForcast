@@ -5,7 +5,7 @@ package com.weather.geo.geo_weather.fragment;
  * Unauthorized copying of this file, via any medium, is strictly prohibited.
  */
 
-import com.weather.geo.geo_weather.Location;
+import com.weather.geo.geo_weather.model.Location;
 
 public class WeatherResponseModel {
 

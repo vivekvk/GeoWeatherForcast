@@ -1,6 +1,6 @@
 package com.weather.geo.geo_weather.fragment;
 
-import com.weather.geo.geo_weather.Condition;
+import com.weather.geo.geo_weather.model.Condition;
 
 public class Current {
 

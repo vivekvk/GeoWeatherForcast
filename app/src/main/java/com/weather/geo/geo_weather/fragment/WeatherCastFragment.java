@@ -2,7 +2,6 @@ package com.weather.geo.geo_weather.fragment;
 
 import android.content.Context;
 import android.graphics.Typeface;
-import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -11,7 +10,6 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,7 +19,7 @@ import android.widget.TextView;
 import com.weather.geo.geo_weather.APIClient;
 import com.weather.geo.geo_weather.APIInterface;
 import com.weather.geo.geo_weather.R;
-import com.weather.geo.geo_weather.WeatherlistAdaptor;
+import com.weather.geo.geo_weather.adaptors.WeatherlistAdaptor;
 import com.weather.geo.geo_weather.model.ForcastModel;
 
 import java.text.DateFormat;
@@ -31,7 +29,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -45,14 +42,6 @@ import static android.support.v7.widget.RecyclerView.HORIZONTAL;
  * Created by Vivek Chandran
  */
 public class WeatherCastFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
     /*Bangalore location hard coded, not integrated map */
     String location = "Bangalore";
     ProgressBar progressBar;
@@ -69,23 +58,10 @@ public class WeatherCastFragment extends Fragment {
         // Required empty public constructor
     }
 
-    // TODO: Rename and change types and number of parameters
-    public static WeatherCastFragment newInstance(String param1, String param2) {
-        WeatherCastFragment fragment = new WeatherCastFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override

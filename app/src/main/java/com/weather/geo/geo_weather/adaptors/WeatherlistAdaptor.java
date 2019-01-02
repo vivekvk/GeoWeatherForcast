@@ -1,4 +1,4 @@
-package com.weather.geo.geo_weather;
+package com.weather.geo.geo_weather.adaptors;
 /*
  *Created Vivek
  */
@@ -10,11 +10,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.weather.geo.geo_weather.R;
+
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 import java.util.TreeMap;
 
 
